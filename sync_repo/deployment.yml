@@ -4,19 +4,19 @@ metadata:
   name: wil42
   namespace: dev
   labels:
-    app: wil-app
+    app: wil42
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wil-app
+      app: wil42
   template:
     metadata:
       labels:
-        app: wil-app
+        app: wil42
     spec:
       containers:
-        - name: will-app
+        - name: wil42
           image: wil42/playground:v2
           imagePullPolicy: Always
           ports:
