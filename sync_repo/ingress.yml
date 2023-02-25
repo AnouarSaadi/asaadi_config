@@ -8,11 +8,11 @@ metadata:
 spec:
   rules:
   - http:
-    paths:
-    - path: /
-      pathType: Prefix
-      backend:
-        service:
-          name: wil42
-          port:
-            number: 8888
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: wil42
+            port:
+              number: 8888
